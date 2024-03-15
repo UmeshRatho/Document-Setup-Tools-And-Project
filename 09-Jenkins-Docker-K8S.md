@@ -56,7 +56,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 ## Step-2 : Configure Maven as Global Tool in Jenkins ##
-1) Manage Jenkins -> Tools -> Maven Installation -> Add maven <br/>
+1) Manage Jenkins -> Tools -> Maven Installation -> Add maven
 
 ## Step-3 : Setup Docker in Jenkins ##
 ```
@@ -71,7 +71,7 @@ sudo docker version
 1) Launch new Ubuntu VM using AWS Ec2 ( t2.micro )	  
 2) Connect to machine and install kubectl using below commands  
 ```
-curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl <br/>
+curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl 
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
@@ -143,16 +143,16 @@ aws --version
 ```
 curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
 chmod +x ./kubectl
-udo mv ./kubectl /usr/local/bin
+sudo mv ./kubectl /usr/local/bin
 kubectl version --short --client
 ```
 
 # Step - 9 : Update EKS Cluster Config File in Jenkins Server #
 	
-1) Execute below command in Eks Management host & copy kube config file data <br/>
+1) Execute below command in Eks Management host & copy kube config file data 
 	$ cat .kube/config 
 
-2) Execute below commands in Jenkins Server and paste kube config file  <br/>
+2) Execute below commands in Jenkins Server and paste kube config file  
 	$ cd /var/lib/jenkins <br/>
 	$ sudo mkdir .kube  <br/>
 	$ sudo vi .kube/config  <br/>
