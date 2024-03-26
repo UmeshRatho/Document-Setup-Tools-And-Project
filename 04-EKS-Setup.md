@@ -61,5 +61,5 @@ $ kubectl get nodes
 ## Step - 4 : After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing ##
 
 ```
-eksctl delete cluster --name ashokit-cluster4 --region ap-south-1a
+eksctl delete cluster --name umesh-cluster4 --region ap-south-1a
 ```
