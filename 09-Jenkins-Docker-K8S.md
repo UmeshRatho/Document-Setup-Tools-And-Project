@@ -120,7 +120,7 @@ eksctl create cluster --name cluster-name  \
 eksctl create cluster --name ashokit-cluster --region ap-south-1 --node-type t2.medium  --zones ap-south-1a,ap-south-1b**
 ```
 ```
-N. Virgina: $ eksctl create cluster --name umesh-cluster4 --region us-east-1 --node-type t2.medium --zones us-east-1a,us-east-1b**
+eksctl create cluster --name umesh-cluster4 --region us-east-1 --node-type t2.medium --zones us-east-1a,us-east-1b**
 ```
 
 Note: Cluster creation will take 5 to 10 mins of time (we have to wait). After cluster created we can check nodes using below command.	
